@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPagesMovie", "RazorPagesMovie.csproj", "{C4F3CF47-533E-43FC-809A-467C34E9778B}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A6A83620-0314-424C-AC27-066F64FB6B74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Library\Library.csproj", "{6B78CD4A-FCE5-4A19-B069-44107EB0E490}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{C4F3CF47-533E-43FC-809A-467C34E9778B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4F3CF47-533E-43FC-809A-467C34E9778B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4F3CF47-533E-43FC-809A-467C34E9778B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6A83620-0314-424C-AC27-066F64FB6B74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6A83620-0314-424C-AC27-066F64FB6B74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6A83620-0314-424C-AC27-066F64FB6B74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6A83620-0314-424C-AC27-066F64FB6B74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B78CD4A-FCE5-4A19-B069-44107EB0E490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B78CD4A-FCE5-4A19-B069-44107EB0E490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B78CD4A-FCE5-4A19-B069-44107EB0E490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B78CD4A-FCE5-4A19-B069-44107EB0E490}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
