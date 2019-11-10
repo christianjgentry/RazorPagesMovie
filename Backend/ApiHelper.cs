@@ -2,7 +2,7 @@
 using System.Net.Http;
 using System.Net.Http.Headers;
 
-namespace Library
+namespace RazorPagesMovie.Backend
 {
     public static class ApiHelper
     {
@@ -14,6 +14,7 @@ namespace Library
             ApiClient = new HttpClient();
             ApiClient.DefaultRequestHeaders.Accept.Clear();
             ApiClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            ApiClient.DefaultRequestHeaders.Add("Accept", "application/json");
 
         }
     }
