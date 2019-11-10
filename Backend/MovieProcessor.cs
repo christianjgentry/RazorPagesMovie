@@ -7,7 +7,7 @@ namespace Library
 {
     public class MovieProcessor
     {
-        public async Task LoadMovie(string movieName = "")
+        public async Task<Movie> LoadMovie(string movieName = "")
         {
             string url = "";
 
@@ -21,6 +21,14 @@ namespace Library
                 if (response.IsSuccessStatusCode)
                 {
                     Movie movie = await response.Content.ReadAsAsync<Movie>();
+
+                    return movie;
+                }
+
+                else {
+
+                    throw new Exception(response.ReasonPhrase);
+
                 }
             }
 
