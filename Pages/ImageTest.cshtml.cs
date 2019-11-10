@@ -12,8 +12,7 @@ namespace RazorPagesMovie.Pages
     {
         public void OnGet()
         {
-            
-            ApiHelper.InitializeClient();
+           
         }
     }
 }

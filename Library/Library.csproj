@@ -11,7 +11,4 @@
   <ItemGroup>
     <Compile Remove="test.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\RazorPagesMovie.csproj" />
-  </ItemGroup>
 </Project>

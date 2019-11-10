@@ -15,9 +15,21 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.0.0" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <Compile Remove="Library\test.cs" />
+    <Compile Remove="Library\Class1.cs" />
+    <Compile Remove="Library\EmptyClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Library\obj\Library.csproj.nuget.dgspec.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Library\obj\Release\netcoreapp3.0\Library.csprojAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Backend\" />
   </ItemGroup>
 </Project>
