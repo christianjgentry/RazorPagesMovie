@@ -31,15 +31,39 @@ namespace RazorPagesMovie.Pages.Movies2
         public async Task<IActionResult> OnPostAsync()
         {
 
+            string[] title = Movie2.Title.Split();
 
-            Movie2 movie = await Backend.Api.GetMovieAsync("Joker");
-            
-            
+            List<string> newtitle = new List<string>();
+            int counter = 0;
+
+            foreach (var word in title)
+            {
+                if (counter != 0 || counter != title.Length - 1)
+                {
+
+                    newtitle.Add(word);
+                    newtitle.Add("+");
+
+                }
+                else
+                {
+                    newtitle.Add(word);
+                }
+
+                counter = counter++;
+            }
+
+
+
+
+            Movie2 movie = await Backend.Api.GetMovieAsync(Movie2.Title);
+
+
             if (!ModelState.IsValid)
             {
                 return Page();
             }
-            
+
 
             _context.Movie2.Add(movie);
             await _context.SaveChangesAsync();

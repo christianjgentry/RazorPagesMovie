@@ -3,7 +3,7 @@
 
 @{
     ViewData["Title"] = "Create";
-    RazorPagesMovie.Models.Movie2 movie;
+    
 }
 
 <h1>Create</h1>
@@ -15,8 +15,15 @@
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-                <input type="submit" value="Create" class="btn btn-primary"/>
+            <div class="form-group">
+                <input asp-for="Movie2.Title" placeholder="Enter a movie..." class="form-control" />
+                <span asp-validation-for="Movie2.Title" class="text-danger"></span>
+            </div>
+
+
             
+            <input type="submit" value="Create" class="btn btn-primary" />
+
         </form>
     </div>
 </div>

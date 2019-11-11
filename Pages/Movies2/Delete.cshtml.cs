@@ -37,7 +37,7 @@ namespace RazorPagesMovie.Pages.Movies2
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync(int? id)
+        public async Task<IActionResult> OnPostAsync(string? id)
         {
             if (id == null)
             {
