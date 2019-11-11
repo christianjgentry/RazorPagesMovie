@@ -2,14 +2,12 @@
 @model RazorPagesMovie.Pages.Movies2.IndexModel
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Movie Database";
 }
 
-<h1>Index</h1>
+<h1>Movie Database</h1>
+<input type="button" value="Add Movie" class="btn btn-primary" onclick="window.location='MovieDatabase/Create'" />
 
-<p>
-    <a asp-page="Create">Create New</a>
-</p>
 <table class="table">
     <thead>
         <tr>
@@ -44,7 +42,6 @@
                 @Html.DisplayFor(modelItem => item.Rated)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.imdbID">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.imdbID">Details</a> |
                 <a asp-page="./Delete" asp-route-id="@item.imdbID">Delete</a>
             </td>
