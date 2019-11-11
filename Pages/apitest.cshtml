@@ -1,14 +1,14 @@
 ﻿@page
 @model RazorPagesMovie.Pages.apitest
 @{
-   RazorPagesMovie.Models.NewMovie movie = await RazorPagesMovie.Backend.ApiTest.GetMovieAsync("Halloween");
+
 }
 
-<h1>@movie.Title</h1>
-<h2>
-    <p>
-        @movie.Year - @movie.Rated
-    </p>
-</h2>
-<img src=@movie.Poster alt="@movie.Title">
-
+<div class="row">
+    <div class="col-md-4">
+        <input value="" class="form-control" placeholder="Enter your favorite movie..." />
+      
+        <input type="submit" value="Add Movie" class="btn btn-primary"/>
+        
+    </div>
+</div>
