@@ -9,13 +9,32 @@
 <img src="@Html.DisplayFor(model => model.Movie2.Poster)">
 
 <div>
+
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Movie2.Year)
+            @Html.DisplayNameFor(model => model.Movie2.Plot)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Movie2.Year)
+            @Html.DisplayFor(model => model.Movie2.Plot)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Movie2.Director)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie2.Director)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Movie2.Actors)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie2.Actors)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Movie2.Released)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie2.Released)
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Movie2.Rated)
@@ -24,7 +43,24 @@
             @Html.DisplayFor(model => model.Movie2.Rated)
         </dd>
     </dl>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Movie2.imdbRating)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie2.imdbRating)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Movie2.Metascore)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Movie2.Metascore)
+        </dd>
+       
+    </dl>
 </div>
+
 <div>
     <a asp-page="./Index">Back to Database</a>
 </div>
